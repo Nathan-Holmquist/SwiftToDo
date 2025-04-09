@@ -14,7 +14,10 @@ struct ProfileView: View {
         
         NavigationView{
             VStack{
-                
+                TLButton(title: "Sign out", background: .pink){
+                    // Action
+                    viewModel.signOut()
+                }
             }
             .navigationTitle("Profile")
         }
